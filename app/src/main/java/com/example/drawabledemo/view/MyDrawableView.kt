@@ -16,13 +16,18 @@ import android.view.View
 class MyDrawableView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
+//    var mXmlDrawable: Drawable? = null
+//
+//    init {
+//        mXmlDrawable = ContextCompat.getDrawable(context, R.drawable.shape_drawable_01)
+//    }
 
 
     override fun onDraw(canvas: Canvas?) {
-        super.onDraw(canvas)
-        canvas?.let {
-            background?.draw(canvas)
-        }
+//        canvas?.let {
+//            mXmlDrawable?.draw(canvas)
+//        }
     }
+
 
 }

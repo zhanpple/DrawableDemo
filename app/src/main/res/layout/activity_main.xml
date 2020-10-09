@@ -20,19 +20,19 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
+            android:onClick="stateListDrawable"
             android:text="StateListDrawable" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
+            android:onClick="layerDrawable"
             android:text="LayerDrawable" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
+            android:onClick="levelListDrawable"
             android:text="LevelListDrawable" />
 
         <Button

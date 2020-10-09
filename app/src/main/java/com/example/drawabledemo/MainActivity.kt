@@ -14,4 +14,15 @@ class MainActivity : AppCompatActivity() {
     fun shapeDrawable(view: View) {
         startActivity(Intent(this,ShapeDrawableActivity::class.java))
     }
+    fun stateListDrawable(view: View) {
+        startActivity(Intent(this,ShapeSelectorActivity::class.java))
+    }
+
+    fun layerDrawable(view: View) {
+        startActivity(Intent(this,ShapeLayerActivity::class.java))
+    }
+
+    fun levelListDrawable(view: View) {
+        startActivity(Intent(this,LevelListActivity::class.java))
+    }
 }
