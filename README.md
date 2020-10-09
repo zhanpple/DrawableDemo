@@ -215,3 +215,5 @@ private Drawable inflateFromTag(@NonNull String name) {
 ```
 ## 其他类型drawable可查看相关源码
 ![图像示例](png/draw04.bmp)
+
+### 参考文章 https://www.cnblogs.com/Jeely/p/11045042.html
