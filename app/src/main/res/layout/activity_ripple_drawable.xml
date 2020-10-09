@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    app:alignContent="space_around"
+    app:alignItems="flex_start"
+    app:flexWrap="wrap">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ripple_draw_01"
+        android:text="普通的ripple" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ripple_draw_02"
+        android:text="添加背景" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ripple_draw_03"
+        android:text="mask背景颜色无效" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ripple_draw_04"
+        android:text="ripple+draw" />
+
+</com.google.android.flexbox.FlexboxLayout>

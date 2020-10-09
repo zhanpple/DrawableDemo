@@ -38,50 +38,52 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
+            android:onClick="transitionDrawable"
+            android:text="TransitionDrawable" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="rippleDrawable"
             android:text="RippleDrawable" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
+            android:onClick="insertDrawable"
             android:text="InsetDrawable" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
+            android:onClick="scaleDrawable"
             android:text="ScaleDrawable" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
+            android:onClick="clipDrawable"
             android:text="ClipDrawable" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
+            android:onClick="rotateDrawable"
             android:text="RotateDrawable" />
+
+
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
+            android:onClick="animationDrawable"
             android:text="AnimationDrawable" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
-            android:text="BitmapDrawable" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:onClick="shapeDrawable"
-            android:text="NinePatchDrawable" />
+            android:onClick="codeBuild"
+            android:text="code build" />
 
     </LinearLayout>
 

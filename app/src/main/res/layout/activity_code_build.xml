@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    app:alignContent="flex_start"
+    app:alignItems="flex_start"
+    app:flexWrap="wrap">
+
+
+
+    <Button
+        android:id="@+id/shapeBt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:text="shape" />
+
+    <Button
+        android:id="@+id/shapeBt2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:text="gradient Drawable" />
+
+
+    <Button
+        android:id="@+id/rippleBt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:text="ContextCompat" />
+
+    <Button
+        android:id="@+id/rippleBt1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:text="ripple" />
+    <Button
+        android:id="@+id/rippleBt2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:text="ripple" />
+
+</com.google.android.flexbox.FlexboxLayout>

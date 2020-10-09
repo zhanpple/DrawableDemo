@@ -20,6 +20,14 @@
         <activity android:name=".ShapeSelectorActivity" />
         <activity android:name=".ShapeLayerActivity" />
         <activity android:name=".LevelListActivity" />
+        <activity android:name=".RippleDrawableActivity" />
+        <activity android:name=".InsertDrawableActivity" />
+        <activity android:name=".ScaleDrawableActivity" />
+        <activity android:name=".ClipDrawableActivity" />
+        <activity android:name=".RotateDrawableActivity" />
+        <activity android:name=".TransitionDrawableActivity" />
+        <activity android:name=".AnimationDrawableActivity" />
+        <activity android:name=".CodeBuildActivity" />
     </application>
 
 </manifest>

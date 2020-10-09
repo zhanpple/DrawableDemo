@@ -2,16 +2,17 @@ package com.example.drawabledemo
 
 import android.os.Bundle
 import android.widget.SeekBar
-import kotlinx.android.synthetic.main.activity_level_list.*
+import kotlinx.android.synthetic.main.activity_rotate_drawable.*
 
-class LevelListActivity : BaseActivity() {
+class RotateDrawableActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_level_list)
+        setContentView(R.layout.activity_rotate_drawable)
 
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                button.background?.level = progress
+                button.drawable?.level = progress * 100
+                button2.background?.level = progress * 100
                 levelTv.text = "level:$progress"
             }
 

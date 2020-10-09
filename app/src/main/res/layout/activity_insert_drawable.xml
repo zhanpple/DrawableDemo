@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    app:alignContent="flex_start"
+    app:alignItems="flex_start"
+    app:flexWrap="wrap">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="inset 添加间距 一般和background配合使用"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorRed"
+        android:src="@drawable/inset_draw_01" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_drawable_02"
+        android:src="@drawable/inset_draw_01" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_drawable_03"
+        android:src="@drawable/inset_draw_01" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/inset_draw_02"
+        android:src="@drawable/inset_draw_03" />
+
+</com.google.android.flexbox.FlexboxLayout>
