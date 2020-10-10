@@ -51,6 +51,7 @@
         android:layout_height="150dp"
         android:layout_margin="10dp"
         android:focusable="true"
-        android:clickable="true" />
+        android:clickable="true"
+        android:layerType="hardware"/>
 
 </com.google.android.flexbox.FlexboxLayout>
