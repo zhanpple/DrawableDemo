@@ -213,6 +213,65 @@ private Drawable inflateFromTag(@NonNull String name) {
         gradientDrawable.orientation = GradientDrawable.Orientation.BL_TR
         shapeBt2.background = gradientDrawable
 ```
+
+## 4.自定义View使用Drawable画图
+```kotlin
+
+//自定义View
+class MyDrawableView @JvmOverloads constructor(
+    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+) : View(context, attrs, defStyleAttr) {
+
+    private var mXmlDrawable: Drawable? = null
+
+    init {
+        mXmlDrawable =
+            ContextCompat.getDrawable(context, R.drawable.ripple_draw_04)
+        mXmlDrawable?.callback = this
+    }
+
+    //设置Bounds
+    override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
+        super.onSizeChanged(w, h, oldw, oldh)
+        mXmlDrawable?.setBounds(0, 0, right - left, bottom - top)
+    }
+
+    //设置绘制Drawable
+    override fun onDraw(canvas: Canvas?) {
+        canvas?.let {
+            //需要设置bounds 才会显示
+            Log.e(TAG, "onDraw: ")
+            mXmlDrawable?.draw(canvas)
+        }
+    }
+
+    //Drawable设置Hotspot
+    override fun dispatchDrawableHotspotChanged(x: Float, y: Float) {
+        super.dispatchDrawableHotspotChanged(x, y)
+        mXmlDrawable?.setHotspot(x, y)
+    }
+
+    //Drawable状态改变通知
+    override fun drawableStateChanged() {
+        super.drawableStateChanged()
+        mXmlDrawable?.state = drawableState
+    }
+
+    //是否需要刷新Drawable  who == mXmlDrawable
+    override fun verifyDrawable(who: Drawable): Boolean {
+        val verifyDrawable = super.verifyDrawable(who)
+        Log.e(TAG, "verifyDrawable:$verifyDrawable ")
+        return who == mXmlDrawable || verifyDrawable
+    }
+
+
+    companion object {
+        private const val TAG = "MyDrawableView"
+    }
+
+}
+
+```
 ## 其他类型drawable可查看相关源码
 ![图像示例](png/draw04.bmp)
 

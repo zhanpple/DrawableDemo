@@ -10,7 +10,6 @@
     app:flexWrap="wrap">
 
 
-
     <Button
         android:id="@+id/shapeBt"
         android:layout_width="150dp"
@@ -39,11 +38,19 @@
         android:layout_height="150dp"
         android:layout_margin="10dp"
         android:text="ripple" />
+
     <Button
         android:id="@+id/rippleBt2"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="10dp"
         android:text="ripple" />
+
+    <com.example.drawabledemo.view.MyDrawableView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:focusable="true"
+        android:clickable="true" />
 
 </com.google.android.flexbox.FlexboxLayout>
